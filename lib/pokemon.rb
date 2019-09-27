@@ -25,7 +25,7 @@ class Pokemon
       poke
       pokemon = Pokemon.new(poke[0], nil, nil)
       pokemon.name = poke[1]
-      pokemon.grade
+      pokemon.type = poke[2]
     end.first
   end
 end
