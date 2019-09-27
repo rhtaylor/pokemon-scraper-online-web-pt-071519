@@ -23,7 +23,7 @@ class Pokemon
             WOW
     db.execute(sql, num).map do |poke|
       poke
-      pokemon = Pokemon.new(id: poke[0],name: nil, type: nil, db)
+      pokemon = Pokemon.new(id: poke[0],name: nil, type: nil, db: )
       pokemon.name = poke[1]
       pokemon.type = poke[2]
       pokemon
