@@ -23,9 +23,9 @@ class Pokemon
             WOW
     db.execute(sql, num).map do |poke|
       poke
-      pokemon = Pokemon.new(poke[0], nil, nil) 
+      pokemon = Pokemon.new(poke[0], nil, nil)
       pokemon.name = poke[1]
-      pokemon.grade 
+      pokemon.grade
     end.first
   end
 end
